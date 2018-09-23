@@ -1,13 +1,26 @@
+
+/**********************************************************************;
+* Project           : Appium Mobile automation front end framework
+*
+* Program name      : AppiumAutomationFramework
+*
+* Author            : Nimal krishna
+*
+* Date created      : 20160816
+*
+* Purpose           : Simple Appium framework
+*
+* Revision History  :
+*
+* Date        Author      Ref    Revision (Date in YYYYMMDD format) 
+* 20180818    Nimal      1      added BDD,TDD characters to the framework 
+*
+|**********************************************************************/
+
 package stepDefinitions;
 
-import java.util.List;
-import java.util.Map;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import cucumber.api.DataTable;
-import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -65,20 +78,8 @@ public void tearDown1()
 	
 	@Given("^home page is loaded with origin and destination_ok$")
 	public void home_page_is_loaded_with_origin_and_destination_ok(DataTable arg1) throws InterruptedException  {
-		for( Map<String,String> data:  arg1.asMaps(String.class, String.class)) {
-		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nimal\\eclipse-workspace\\NimalAutomationFramework\\chromedriver.exe");	
-		driver = new ChromeDriver(); 
-		driver.get("https://www.ca.kayak.com/flights");
-		Thread.sleep(1000);
-		List<WebElement> fromPlace = driver.findElements(By.xpath("//*[contains(@id,'-origin-airport-display-inner')]"));
-		fromPlace.get(0).click();
-		Thread.sleep(1000);
+	    // Write code here that turns the phrase above into concrete actions
 
-		List<WebElement> fromPlaceTextBox = driver.findElements(By.xpath("//*[contains(@id,'-origin-airport-smarty-wrapper')]//*[contains(@id,'-origin-airport')]"));
-		fromPlaceTextBox.get(0).sendKeys(data.get("origin")); //0th row 0th column		
-		
-		}
 	}
 
 

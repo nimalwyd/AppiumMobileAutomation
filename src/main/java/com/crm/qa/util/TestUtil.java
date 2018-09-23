@@ -1,3 +1,22 @@
+
+/**********************************************************************;
+* Project           : Appium Mobile automation front end framework
+*
+* Program name      : AppiumAutomationFramework
+*
+* Author            : Nimal krishna
+*
+* Date created      : 20160816
+*
+* Purpose           : Simple Appium framework
+*
+* Revision History  :
+*
+* Date        Author      Ref    Revision (Date in YYYYMMDD format) 
+* 20180818    Nimal      1      added BDD,TDD characters to the framework 
+*
+|**********************************************************************/
+
 package com.crm.qa.util;
 
 import java.io.File;
@@ -20,7 +39,7 @@ public class TestUtil extends TestBase{
 	public static long PAGE_LOAD_TIMEOUT = 60;
 	public static long IMPLICIT_WAIT = 60;
 	public static int totalTestCases;
-	public static String TESTDATA_SHEET_PATH = "C:\\Users\\nimal\\eclipse-workspace\\AutomationNimal\\src\\main\\java\\com\\crm\\qa\\testdata\\FreeCrmTestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = "C:\\Users\\nimal\\eclipse-workspace\\AppiumAutomationFramework\\src\\main\\java\\com\\crm\\qa\\testdata\\FreeCrmTestData.xlsx";
 	
 	static Workbook book;
 	static Sheet sheet;

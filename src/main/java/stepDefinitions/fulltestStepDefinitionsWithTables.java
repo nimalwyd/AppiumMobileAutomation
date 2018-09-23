@@ -1,3 +1,22 @@
+
+/**********************************************************************;
+* Project           : Appium Mobile automation front end framework
+*
+* Program name      : AppiumAutomationFramework
+*
+* Author            : Nimal krishna
+*
+* Date created      : 20160816
+*
+* Purpose           : Simple Appium framework
+*
+* Revision History  :
+*
+* Date        Author      Ref    Revision (Date in YYYYMMDD format) 
+* 20180818    Nimal      1      added BDD,TDD characters to the framework 
+*
+|**********************************************************************/
+
 /*
 
 package stepDefinitions;
@@ -38,19 +57,8 @@ public void tearDown()
 }	
 	
 	@Given("^home page is loaded with origin and destination_ok$")
-	public void home_page_is_loaded_with_origin_and_destination_ok(DataTable arg1) throws Throwable {
-		List<List<String>> data = arg1.raw();
-		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nimal\\eclipse-workspace\\NimalAutomationFramework\\chromedriver.exe");	
-		driver = new ChromeDriver(); 
-		driver.get("https://www.ca.kayak.com/flights");
-		Thread.sleep(1000);
-		List<WebElement> fromPlace = driver.findElements(By.xpath("//*[contains(@id,'-origin-airport-display-inner')]"));
-		fromPlace.get(0).click();
-		Thread.sleep(1000);
-
-		List<WebElement> fromPlaceTextBox = driver.findElements(By.xpath("//*[contains(@id,'-origin-airport-smarty-wrapper')]//*[contains(@id,'-origin-airport')]"));
-		fromPlaceTextBox.get(0).sendKeys(data.get(0).get(0)); //0th row 0th column		
+    // Write code here that turns the phrase above into concrete actions
+	
 		
 	}
 

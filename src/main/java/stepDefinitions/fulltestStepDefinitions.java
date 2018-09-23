@@ -45,22 +45,14 @@ public void tearDown()
 @Given("^home page is loaded with \"(.*)\" and \"(.*)\"$")	
 public void HomePageTitleIsVerfied(String fromPlacename, String toPlacename) throws IOException, InterruptedException
 	{
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\nimal\\eclipse-workspace\\NimalAutomationFramework\\chromedriver.exe");	
-	driver = new ChromeDriver(); 
-	driver.get("https://www.ca.kayak.com/flights");
-	Thread.sleep(1000);
-	List<WebElement> fromPlace = driver.findElements(By.xpath("//*[contains(@id,'-origin-airport-display-inner')]"));
-	fromPlace.get(0).click();
-	Thread.sleep(1000);
-
-	List<WebElement> fromPlaceTextBox = driver.findElements(By.xpath("//*[contains(@id,'-origin-airport-smarty-wrapper')]//*[contains(@id,'-origin-airport')]"));
-	fromPlaceTextBox.get(0).sendKeys(fromPlacename);				
+	    // Write code here that turns the phrase above into concrete actions
+		
 	}
 	
 @When("^homepage title is verified$")
 public void homepage_title_is_verified() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
+    
 }
 
 @Then("^round trip journey is selected$")
