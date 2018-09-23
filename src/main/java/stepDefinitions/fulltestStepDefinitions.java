@@ -1,3 +1,22 @@
+
+/**********************************************************************;
+* Project           : Appium Mobile automation front end framework
+*
+* Program name      : AppiumAutomationFramework
+*
+* Author            : Nimal krishna
+*
+* Date created      : 20160816
+*
+* Purpose           : Simple Appium framework
+*
+* Revision History  :
+*
+* Date        Author      Ref    Revision (Date in YYYYMMDD format) 
+* 20180818    Nimal      1      added BDD,TDD characters to the framework 
+*
+|**********************************************************************/
+
 /*package stepDefinitions;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
